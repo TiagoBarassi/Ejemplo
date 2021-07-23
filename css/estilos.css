@@ -98,7 +98,11 @@
   background-color: black;
   background-repeat: no-repeat;
   background: url(bc.jpg);
+<<<<<<< HEAD
   background-position: cover; }
+=======
+  background-position: center; }
+>>>>>>> origin/main
 
 .titulo, .titulo__enfasis, .titulo__enfasis--subrayado {
   font-family: 'Montserrat', sans-serif;
@@ -172,6 +176,17 @@
   font-weight: 400;
   padding: 10px; }
 
+<<<<<<< HEAD
+=======
+.FAQ {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  background: #10849c;
+  color: white;
+  padding: 10px; }
+
+>>>>>>> origin/main
 .formulario {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -287,6 +302,7 @@
   font-size: 1rem;
   text-align: normal; }
 
+<<<<<<< HEAD
 .faq {
   background: url(faq.jpg); }
 
@@ -306,6 +322,8 @@
   text-decoration: none;
   color: #016684; }
 
+=======
+>>>>>>> origin/main
 .enviadoBody {
   background-color: black;
   background-repeat: no-repeat;

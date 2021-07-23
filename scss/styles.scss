@@ -87,7 +87,11 @@
 	background-color: black;
 	background-repeat: no-repeat;
 	background: url(bc.jpg);
+<<<<<<< HEAD
 	background-position: cover;
+=======
+	background-position: center;
+>>>>>>> origin/main
 }
 
 .titulo {
@@ -166,6 +170,17 @@
 	font-weight: 400;
 	padding: 10px;
 }
+<<<<<<< HEAD
+=======
+.FAQ {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 3rem;
+	background: rgb(16,132,156);
+	color: white;
+	padding: 10px;
+}
+>>>>>>> origin/main
 .formulario {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
@@ -289,6 +304,7 @@
 	font-size: 1rem;
 	text-align: normal;
 }
+<<<<<<< HEAD
 .faq {
 	background: url(faq.jpg);
 }
@@ -308,6 +324,8 @@
 	text-decoration: none;
 	color: rgb(1, 102, 132);
 }
+=======
+>>>>>>> origin/main
 
 .enviadoBody {
 	background-color: black;
@@ -327,4 +345,8 @@
 .enviado__texto--chico {
 	@extend.enviado__texto;
 	font-size: 1rem;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main
