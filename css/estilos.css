@@ -87,7 +87,8 @@
 .divdc {
   position: fixed;
   bottom: 20px;
-  right: 20px; }
+  right: 20px;
+  z-index: 1; }
   .divdc:hover {
     transform: scale(1.2); }
 
@@ -97,7 +98,7 @@
 .index {
   background-color: black;
   background-repeat: no-repeat;
-  background: url(bc.jpg);
+  background: url(../media/bc.jpg);
   background-position: cover;
   background-position: center; }
 
@@ -164,7 +165,7 @@
 .contacto {
   background-color: black;
   background-repeat: no-repeat;
-  background: url(contacto.jpg);
+  background: url(../media/contacto.jpg);
   background-position: center; }
 
 .Duda {
@@ -199,7 +200,7 @@
 .e-sports {
   background-color: black;
   background-repeat: no-repeat;
-  background: url(e-sports.jpg);
+  background: url(../media/e-sports.jpg);
   background-position: center; }
 
 .fotoCaroussel {
@@ -240,7 +241,7 @@
 .proyecto {
   background-color: black;
   background-repeat: no-repeat;
-  background: url(proyecto.jpg);
+  background: url(../media/proyecto.jpg);
   background-position: center; }
 
 .nuestroideal {
@@ -297,7 +298,7 @@
   text-align: normal; }
 
 .faq {
-  background: url(faq.jpg); }
+  background: url(../media/faq.jpg); }
 
 .FAQ {
   font-family: 'Montserrat', sans-serif;
@@ -315,20 +316,47 @@
   text-decoration: none;
   color: #016684; }
 
-.enviadoBody {
-  background-color: black;
-  background-repeat: no-repeat;
-  background: url(enviado.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.enviado__texto, .enviado__texto--chico {
-  color: white;
+.enviado__texto, .enviado__texto--titulo, .enviado__texto--medio, .enviado__texto--chico {
+  color: #016684;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  text-align: center; }
+
+.enviado__texto--titulo {
   font-size: 2rem;
-  text-align: center;
-  padding: 50px; }
+  font-weight: 500;
+  color: #017597; }
+
+.enviado__texto--medio {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 400; }
 
 .enviado__texto--chico {
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: 300; }
+
+.buttonEnviado {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: black;
+  background-color: white; }
+  .buttonEnviado:hover {
+    color: darkblue; }
+
+.input__nombre {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.input__email {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.input__mensaje {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.input__checkbox {
+  padding: 5px; }
+
+.input__terminos {
+  padding: 5px; }

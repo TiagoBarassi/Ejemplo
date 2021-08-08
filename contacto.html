@@ -32,7 +32,7 @@
 	</header>
 	<main class="container">
 		<div class="divdc">
-			<a href="https://discord.gg/ZH8NFwwK"> <img src="media/discord.svg" class="fotodc"> </a>
+			<a href="https://discord.com/invite/fkfDVjjGwy"> <img src="media/discord.svg" class="fotodc"> </a>
 		</div>
 		<div class="row">
 			<p class="titulo_2">¿Tenes alguna otra duda que no pudimos resolver o queres contratar nuestro servicio? ¡Escribinos! </p>
@@ -42,36 +42,45 @@
 			<form action="enviado.html" method="POST" enctype="multipart/form-data" class="formulario">
 				<fieldset>
 					<legend>Datos de contacto:</legend>
-						<input type="name" name="nombre" placeholder="ingresa tu nombre" class="form-control">
-						<br>
-						<input type="email" name="email" placeholder="Ingresa tu mail" class="form-control">
-						<br>
-						<textarea name="mensaje" placeholder="Ingresa tu consulta" class="textareaContacto"></textarea>
-						<br>
-						<br>
+						<input type="name" name="nombre" placeholder="ingresa tu nombre" class="form-control input__nombre">
+						<input type="email" name="email" placeholder="Ingresa tu mail" class="form-control input__email">
+						<textarea name="mensaje" placeholder="Ingresa tu consulta" class="textareaContacto input__mensaje"></textarea>
 						<select name="Posibilidades" class="custom-select custom-select-sm">
 							<option value="a">Entrenamiento Principiante</option>
 							<option value="b">Entrenamiento Intermedio</option>
 							<option value="c">Entrenamiento Avanzado</option>
 							<option value="d">Entrenamiento E-Sports</option>
 						</select>
-						<br>
-						<br>
-						<div class="form-check">
-						  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-						  <label class="form-check-label" for="exampleRadios1">
-						    Consulta.
-						  </label>	
-						 </div>
-						<div class="form-check">
-						  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" checked>
-						  <label class="form-check-label" for="exampleRadios1">
-						    Contratacion.
-						  </label>
+						<div class="d-block">
+							<div class="form-check d-inline-block">
+						  		<input class="form-check-input input__checkbox" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+						 		<label class="form-check-label" for="exampleRadios1">Consulta.</label>	
+							 </div>
+							<div class="form-check d-inline-block">
+						 		<input class="form-check-input input__checkbox" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" checked>
+						  		<label class="form-check-label input__checkbox" for="exampleRadios1">Contratacion.</label>
+							</div>
 						</div>
-						<input type="checkbox" name="acepto" value="acepto"> <p>Acepto los terminos y condiciones de la pagina.</p>
-						<br>
-						<input type="submit" name="enviar" value="Enviar">
+						<input class="d-inline-block input__terminos" type="checkbox" name="acepto" value="acepto"><p class="d-inline-block input__terminos">Acepto los terminos y condiciones de la pagina.</p>
+						<button type="button" class="btn buttonEnviado col-12" data-toggle="modal" data-target="#exampleModal">
+						  Enviar
+						</button>
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title enviado__texto--titulo" id="exampleModalLabel">¡Enviado!</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	<h3 class="enviado__texto--medio">¡Gracias por contactarte con nosotros! :)</h3>
+						        <h5 class="enviado__texto--chico">Te responderemos pronto, en caso de no llegarte el mail, chequeá la carpeta de spam.</h5>
+						      </div>
+						    </div>
+						  </div>
+						</div>
 				</fieldset>
 			</form>
 		</div>
