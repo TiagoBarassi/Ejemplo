@@ -137,6 +137,12 @@
 		background-size: cover;
 		padding: 20px;
 	}
+	.textoEnNegritaEnfasis {
+		@extend .textoEnNegrita;
+		font-size: 1.7rem;
+		color: white;
+		font-family: 'Montserrat', sans-serif;
+	}
 .blancoLugar {
 		color: white;
 		font-style: italic;
@@ -367,16 +373,87 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+.iconos {
+	height: 256px;
+}
+@media all and (max-width: 768px) {
 	.index {
 		background-size: 50%;
+		background: url(../media/bc2.jpg);
+		background-position: center;
+	}
+	.contacto {
+		background: url(../media/contacto2.jpg);
+		background-position: center;
 	}
 	.e-sports {
 		background-size: 50%;
+		background: url(../media/e-sports2.jpg);
+		background-position: center;
 	}
 	.proyecto {
 		background-size: 50%;
+		background: url(../media/proyecto3.jpg);
+		background-position: center;
+	 	background-repeat: no-repeat;
 	}
 	.faq {
 		background-size: 50%;
+		background: url(../media/faq2.jpg);
+		background-position: center;
+	}
+	.textoEnNegrita {
+		font-size: 1.2rem;
+	}
+	
+@media all and (max-width: 425px) {
+	.iconos {
+		height: 144px;
+	}
+	.barraBlanca {
+		width: 250px;
+	}
+	.titulo_1 {
+		font-size: 2rem;
+	}
+	.titulo {
+		font-size: 1.8rem;
+	}
+	.index {
+	 background: url(../media/bc3.jpg);	
+	 background-position: center;
+	}
+	
+	.textoEnNegrita {
+		font-size: 1.2rem;
+	}
+	
+	.texto__inscripcion--explicacion {
+		font-size: 1rem;
+		text-align: left;
+	}
+	.navLink {
+		padding: 20px;
 	}
 }
+@media all and (max-width: 375px) {
+	.iconos {
+		height: 100px;
+	}
+	.fotoFlex {
+		height: 200px;
+	}
+	.titulo_1 {
+		font-size: 1.75rem;
+	}
+	.equipo--nombre {
+		font-size: 4rem;
+	}
+	.texto__inscripcion--explicacion {
+		font-size: 1rem;
+		text-align: left;
+	}
+	.navLink {
+		padding: 10px;
+	}
+}}}
